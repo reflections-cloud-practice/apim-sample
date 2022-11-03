@@ -1,0 +1,96 @@
+{
+  "uuid": "ea413ea7-b61a-4e68-bc1e-7875b2d7d57c",
+  "lastMigration": 24,
+  "name": "Svc",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "routes": [
+    {
+      "uuid": "407f7308-6107-4512-8ad7-865cd847bc0e",
+      "documentation": "Material Master",
+      "method": "post",
+      "endpoint": "materialmaster",
+      "responses": [
+        {
+          "uuid": "408a4ac2-f044-4b9e-93ee-9ed2b56d78a6",
+          "body": "{\n  message: \"success\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "3b19feea-71fe-4261-affc-ce174bee3066",
+      "documentation": "Material Determnation",
+      "method": "post",
+      "endpoint": "materialdetermnation",
+      "responses": [
+        {
+          "uuid": "da037412-c808-44fe-abc2-ddd333a36f9f",
+          "body": "{\n  message: \"success\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
